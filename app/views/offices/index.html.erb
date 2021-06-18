@@ -1,1 +1,17 @@
 <h1>Offices</h1>
+
+<div class="container">
+  <%= @offices.each_with_index do |office| %>
+  <ul>
+    <li class="name"><%= office.name %></li>
+    <li class="address"><%= office.address %></li>
+    <li class="city"><%= office.city %></li>
+    <li class="country"><%= office.country %></li>
+    <li class="size"><%= "#{office.size}m2" %></li>
+    <li class="capacity"><%= "#{office.capacity} people maximum" %></li>
+    <li class="price"><%= "#{office.price}€" %> </li>
+  </ul>
+  <% end %>
+</div>
+
+<h4><%= link_to "Back home", root_path %></h4>

@@ -1,0 +1,36 @@
+.navbar {
+  height: 100px;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+}
+
+.lien {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container-link {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.li-list {
+  padding: 8px 24px;
+}
+
+.span-list {
+  text-decoration: none;
+}

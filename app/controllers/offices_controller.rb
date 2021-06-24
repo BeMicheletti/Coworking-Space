@@ -5,6 +5,7 @@ class OfficesController < ApplicationController
   end
 
   def show
+    @office = Office.find(params[:id])
   end
 
   def new
@@ -12,7 +13,7 @@ class OfficesController < ApplicationController
   end
 
   def create
-    @offce = Office.new(office_params)
+    @office = Office.new(office_params)
     if @office.save!
       redirect_to office_path(@office)
     else
@@ -29,5 +30,4 @@ class OfficesController < ApplicationController
   def office_params
     params.require(:office).permit(:name, :address, :city, :country, :size, :capacity, :price)
   end
-
 end

@@ -26,16 +26,18 @@
 
 
     <div class="container container-card">
-        <% @offices.each_with_index do |office| %>
-        <ul class="ul-card">
-            <h4><li class="li-card"><%= office.name %></li></h4>
-            <li class="li-card"><%= office.address %></li>
-            <li class="li-card"><%= office.city %></li>
-            <li class="li-card"><%= office.country %></li>
-            <li class="li-card"><%= "#{office.size}m2" %></li>
-            <li class="li-card"><%= "#{office.capacity} people maximum" %></li>
-            <li class="li-card"><%= "#{office.price}€" %> </li>
-        </ul>
+        <% @offices.each_with_index do |office, i| %>
+          <ul class="ul-card">
+            <%= link_to office_path(office), style: "animation-delay: #{i * 0.4}s;" do  %>
+              <h4><li class="li-card"><%= office.name %></li></h4>
+              <li class="li-card"><%= office.address %></li>
+              <li class="li-card"><%= office.city %></li>
+              <li class="li-card"><%= office.country %></li>
+              <li class="li-card"><%= "#{office.size}m2" %></li>
+              <li class="li-card"><%= "#{office.capacity} people maximum" %></li>
+              <li class="li-card"><%= "#{office.price}€" %> </li>
+            <% end %>
+          </ul>
       <% end %>
     </div>
 </div>

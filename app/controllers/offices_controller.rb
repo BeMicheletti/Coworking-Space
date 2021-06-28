@@ -8,18 +8,18 @@ class OfficesController < ApplicationController
     @office = Office.find(params[:id])
   end
 
-  def new
-    @office = Office.new
-  end
+#  def new
+#    @office = Office.new
+#  end
 
-  def create
-    @office = Office.new(office_params)
-    if @office.save!
-      redirect_to office_path(@office)
-    else
-      render :new
-    end
-  end
+#  def create
+#    @office = Office.new(office_params)
+#    if @office.save!
+#      redirect_to office_path(@office)
+#    else
+#      render :new
+#    end
+#  end
 
   private
 

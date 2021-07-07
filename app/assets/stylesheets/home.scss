@@ -11,8 +11,17 @@
 .banner h2 {
   text-align: left;
   padding-top: 90px;
-  padding-left: 180px;
+  padding-left: 146px;
   font-size: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.button-home {
+  margin: 0 auto;
+  margin-top: 120px;
 }
 
 .banner img {
@@ -22,12 +31,16 @@
 .grid-container {
   text-align: center;
   display: grid;
-  display: flex;
   grid-column-gap: 290px;
   justify-content: center;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.content-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  grid-column-gap: 290px;
 }
 
 .grid-item {
@@ -44,8 +57,6 @@
 .content {
   display: grid;
   margin: 20px;
-  border: solid 1px;
-  border-radius: 4px;
 }
 
 .content-item {
@@ -59,8 +70,14 @@
 
 .content-item h1 {
   margin: 0px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .content-item p {
   margin: 0px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 20px;
 }

@@ -16,7 +16,12 @@
 
 <div class="container-banner">
   <div class="banner">
-    <h2>Start reimagine <br> <strong>your workspace</strong></h2>
+    <div class="title">
+      <h2>Start reimagine <br> <strong>your workspace</strong></h2>
+        <div class="button button-home">
+          <%= link_to "Get started", offices_path %>
+        </div>
+    </div>
         <%= image_tag "banner", height: 600 %>
   </div>
 </div>
@@ -25,18 +30,21 @@
 <hr>
 
 <div class="grid-container">
-  <div class="grid-item">
-    <h1>Titre 1 </h1>
-    <p>Contenu 1</p>
-  </div>
-  <div class="grid-item">
-    <h1>Titre 2 </h1>
-    <p>Contenu 2</p>
-  </div>
-  <div class="grid-item">
-    <h1>Titre 3 </h1>
-    <p>Contenu 2</p>
-  </div>
+  <h1>We help plan the Make <br> Workspace</h1>
+    <div class="content-container">
+      <div class="grid-item">
+        <h3>Titre 1 </h3>
+        <p>Contenu 1</p>
+      </div>
+      <div class="grid-item">
+        <h3>Titre 2 </h3>
+        <p>Contenu 2</p>
+      </div>
+      <div class="grid-item">
+        <h3>Titre 3 </h3>
+        <p>Contenu 2</p>
+      </div>
+    </div>
 </div>
 
 <hr>
@@ -47,11 +55,17 @@
     <p>contenu 1</p>
   </div>
   <div class="content-item">
-    <h1>Titre 2</h1>
     <p>contenu 2</p>
+    <h1>Titre 2</h1>
   </div>
   <div class="content-item">
     <h1>Titre 3</h1>
     <p>contenu 3</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container-footer">
+    hello
   </div>
 </div>

@@ -28,26 +28,35 @@
   margin-left: 100px;
 }
 
+.grid-container h1 {
+  margin-top: 20px;
+}
+
+.h1 {
+  color: rgb(98, 190, 179);
+}
+
 .grid-container {
+  background: linear-gradient(to bottom, #f0f8ff 0%, #e5d0ec 100%);
   text-align: center;
   display: grid;
-  grid-column-gap: 290px;
   justify-content: center;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .content-container {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  grid-column-gap: 290px;
+  grid-column-gap: 100px;
 }
 
 .grid-item {
-  border: solid 1px;
+  background-color: white;
   border-radius: 4px;
   margin: 20px;
-  padding: 20px;
+  padding: 80px;
 }
 
 .grid-item h1 {
@@ -57,27 +66,30 @@
 .content {
   display: grid;
   margin: 20px;
+  margin-bottom: 20px;
 }
 
 .content-item {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 800px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .content-item h1 {
   margin: 0px;
-  border: solid 1px;
   border-radius: 4px;
   padding: 20px;
 }
 
 .content-item p {
   margin: 0px;
-  border: solid 1px;
   border-radius: 4px;
   padding: 20px;
 }
